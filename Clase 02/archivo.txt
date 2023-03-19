@@ -1,4 +1,3 @@
 5. Modifique el archivo desde la interfaz web de Github, verifique que dicho cambio NO está aplicado localmente ¿Por qué no está?
 
-
-solucionado
+interfaz
