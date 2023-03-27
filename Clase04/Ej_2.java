@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class Ej_2 {
     public static void main(String[] args) {
-        String filePath = "I:\\Mi unidad\\Repositorios JoelFiare Git\\Desarrollador-JAVA-Inicial-AP-4.0\\Clase04\\archivo.txt";
+        String filePath = "Clase04\\archivo.txt";
 
         try {
             // Abrir el archivo y crear un lector de texto
