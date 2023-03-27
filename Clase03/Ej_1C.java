@@ -1,6 +1,7 @@
 // Autor: Joel Fiaré
 // Imprime en pantalla:
 // La suma de los números mayores a 5 es 32
+package Clase03;
 public class Ej_1C {
     public static void main(String[] args) {
         int[] numeros = {4, 7, 2, 9, 1, 16};

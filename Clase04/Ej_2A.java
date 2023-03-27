@@ -6,7 +6,7 @@
 // Seleccione la operación (suma o multiplicacion):
 // suma
 // El resultado de la suma de los números en el archivo es: 15
-
+package Clase04;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;

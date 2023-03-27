@@ -1,7 +1,7 @@
 // Autor: Joel Fiaré
 // Se deberían imprimir en pantall:
 // La letra 'o' aparece 2 veces en el String 'Hola Mundo'
-
+package Clase03;
 public class Ej_1A {
     public static void main(String[] args) {
 

@@ -5,7 +5,7 @@
 // Ingrese el 3° número:18
 // Ingrese 'a' para ordenar en forma ascendente o 'd' para ordenar en forma descendente: a
 // Números ordenados: 15,18,35
-
+package Clase04;
 import java.util.Arrays;
 import java.util.Scanner;
 

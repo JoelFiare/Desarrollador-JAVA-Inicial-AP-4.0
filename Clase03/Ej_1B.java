@@ -2,7 +2,7 @@
 // Imprime en pantalla:
 // Ascendente: [8, 5, 3]
 // Descendente: [3, 5, 8]
-
+package Clase03;
 import java.util.Arrays;
 
 public class Ej_1B {

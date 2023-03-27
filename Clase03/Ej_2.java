@@ -3,6 +3,7 @@
 // Texto original: hola mundo
 // Texto codificado: ipmb!nvoep
 // Texto decodificado: hola mundo
+package Clase03;
 public class Ej_2 {
     public static void main(String[] args) {
         String texto = "hola mundo";
