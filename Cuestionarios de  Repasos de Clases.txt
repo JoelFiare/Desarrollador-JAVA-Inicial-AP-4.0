@@ -1,0 +1,361 @@
+------------------------------------------------------------------------------------------------------
+CLASE 1 - Introducción a Algoritmos y Java
+------------------------------------------------------------------------------------------------------
+
+En la sentencia if / else
+    a. Primero se pone lo que debe pasar cuando se cumple la condición y luego qué pasa si existe un error con la ejecución de lo primero
+    b. Dentro del else está prohibido volver a ejecutar otra sentencia if
+    c. Primero se pone lo que debe pasar cuando no se cumple la condición y luego qué pasa cuando se cumple
+●   d. Primero se pone lo que debe pasar cuando se cumple la condición y luego qué pasa cuando no se cumple
+
+¿Qué imprime el siguiente loop?
+    int i = 6;
+    while(i > 0) {
+        if (i < 3) {
+            i = i + 1;
+        }
+        i = i - 2;
+        System.out.println(i);
+    }
+
+    a. Nunca entra pq no se cumple la condición
+    b. No termina nunca, imprime hasta que no se termina el programa
+●   c. Imprime 4 2 1 0
+    d. Imprime 5 3 2 1 -1
+
+El loop while(i > 10) {i = i +1; }, si i=10
+    a. no termina nunca
+    b. no funciona
+    c. se ejecuta 10 veces y frena
+●   d. no se ejecuta nunca
+    e. Debuggear consiste en identificar la causa de los errores y corregirlos
+
+El dados el operador && (AND o “Y”) y el || (OR o “O”), y las variables a = 17, b = 4 y c = 4, indique la opción correcta:
+    a. (a > b) && (c != b): 	 	es verdadero/true
+    b. (a > b) && ((c * b) < a): 	es verdadero/true
+    c. (a == c) || (b == c): 		es verdadero/true
+    d. todas son verdaderas
+    e. ninguna es verdaderas
+●   f. b y c son verdaderas
+
+Indique cuál de los siguientes tipos tiene solo 2 valores:
+●   a. boolean
+    b. binary
+    c. int
+    d. float
+    e. char
+
+------------------------------------------------------------------------------------------------------
+CLASE 2 - Git y Github
+------------------------------------------------------------------------------------------------------
+
+Cuando hago git pull, ¿qué pasa si alguien modificó un archivo y yo en mi copia local modifique otro?
+    a. 2 personas distintas no pueden modificar el repo al mismo tiempo
+●   b. no hay conflicto
+    c. hay que arreglar el conflicto
+    d. si los 2 archivos están en el mismo directorio hay conflicto, sino no
+
+Siempre que se haga commit en el repositorio local, los cambios serán visibles en el repositorio remoto, ya que Git los mantiene sincronizados
+●   a. Falso
+    b. Verdadero
+
+Que nos permite hacer GIT
+    a. Tener un historial de cambios
+    b. Saber quién hizo cada cambio y cuando
+    c. Trabajar en equipo
+●   d. Todas son correctas
+    e. Solo (a) y (b) son correctas
+
+Si yo en mi copia local modifico varios archivos
+    a. haciendo git merge automatizo el proceso de add, commit y push
+    b. estoy obligado a hacer add de todos antes de hacer commit, para no romper la sincronización del repositorio
+●   c. puedo hacer un commit con unos pocos archivos haciendo add de lo que me interesa
+
+Git, GitHub y Gitlab son lo mismo
+●   a. Falso
+    b. Verdadero
+
+------------------------------------------------------------------------------------------------------
+CLASE 3 - Array y String
+------------------------------------------------------------------------------------------------------
+
+Si tenemos el siguiente array:
+    "int numeros[] = new int[]{1,37,16};"
+    ¿qué valor es numeros[2] ?
+
+●   a. 16
+    b. es un error porque se va de tamaño
+    c. 37
+    d. 1, porque vuelve a empezar
+
+Cual es la salida de la siguiente sentencia: 
+    "hola que tal?".toUpperCase().replace("hola","chau");
+
+●   a. HOLA QUE TAL?
+    b. Es una sentencia invalida
+    c. CHAU QUE TAL
+    d. HOLA QUE TAL
+    e. hola que tal?
+
+No se puede escribir la letra contrabarra “\“ en una cadena ya que es el carácter de “escape”
+    a. Verdadero
+●   b. Falso
+
+Dada la siguiente sentencia: String[] separado = "3_tristes tigres_del_13".split("_") , indique la opción correcta:
+    a. separado.length es 1
+    b. separado[1] es “tristes”
+    c. separado.length es 2
+●   d. separado[1] es “tristes tigres”
+
+P: Si tenemos el siguiente código, ¿cuál es la salida esperada?
+    char letras[] = {'a','b','c','d'};
+    int numeros[] = new int[]{1,37,16};
+    for(int i=0;i<numeros.length;i++){
+        if (numeros[i] < 30) {
+            System.out.println(letras[i+1]);
+        } else {
+            System.out.println(numeros[i]);
+        }
+    }
+
+    a. a 37 c
+    b. 1, b, 17
+    c. 1, c, 17
+●   d. b 37 d
+    e. Para que el código funcione hay que cambiar "i<numeros.length" por "i<letras.length"
+
+------------------------------------------------------------------------------------------------------
+CLASE 4 - Programa y Archivos
+------------------------------------------------------------------------------------------------------
+
+Dada la siguiente función, indique cuál de las siguientes opciones es la correcta:
+    public static int contarLetra(String unaPalabra, char letra){
+    int cuenta = 0;
+    for (int i = 0; i<letraPalabra.length; i++){
+        if( letraPalabra.charAt(i)  == letra){
+            cuenta = cuenta + 1;
+        }
+    }
+    return cuenta;
+    }
+
+    a. La función puede ser utilizada dentro de un main
+    b. Los parámetros unaPalabra y letra pueden tomar cualquier valor dentro de su tipo
+    c. Si unaPalabra es un String vacío “” la función retorna 0.
+●   d. todas las anteriores
+    e. ninguna de las anteriores
+
+Leer desde la consola una información sirve para hacer un programa interactivo, mientras que si se usan argumentos para enviarle información a un programa, solo puedo hacerlo al inicio
+    a. Falso
+●   b. Verdadero
+
+Dada la siguiente frase, elija la mejor opción:
+    “El proceso de decode es guardar un string como su representación en bytes y el de encode, es recuperar un String a partir de los bytes almacenados.“
+
+●   a. Falso, pero la frase es al revés
+    b. Falso
+    c. Verdadero
+
+Dado el siguiente código, indique la opción correcta:
+    for (String linea : Files.readAllLines(Paths.get(archivo))){
+        if(linea.startswith(“*”)){
+            System.out.println(linea);
+        }
+    }
+
+    a. la variable archivo debe ser un String
+    b. Se imprimen todas las lineas del archivo
+    c. Se imprimen solo las lineas que tienen un “*”
+    d. Se imprimen solo las lineas que empiezan con un “*”
+    e. todas son incorrectas
+●   f. a y d son correctas
+    g. a y c con correctas
+
+Si usted está en Windows, y ejecuta un programa de Java desde
+    C:\\Users\\SuNombre\\ y quiere abrir el archivo C:\\Users\\SuNombre\\Documentos\\unTexto.txt.
+    Marque la opción correcta:
+
+    a. Para abrir el archivo puede usar en el String la ruta “unText.txt”
+    b. Para abrir el archivo puede usar en el String la ruta “C:\\Users\\SuNombre\\Documentos\\unTexto.txt”
+    c. Para abrir el archivo puede usar en el String la ruta “Documentos\\unText.txt”
+●   d. b y c son correctas
+    e. todas son incorrectas
+
+------------------------------------------------------------------------------------------------------
+CLASE 5 - Introducción a la programación OO
+------------------------------------------------------------------------------------------------------
+
+Dados 2 objetos a1 y a2, de la misma clase X, si X tiene un método privado y a1 referencia a a2, a1 no puede invocar al método privado de a2.
+    a. Verdadero
+●   b. Falso
+
+Dada la siguiente clase, elija la mejor opción:
+    class Viaje {
+        private Datetime inicio;
+        private int cantDias;
+        private String origen;
+        private String destino;
+        private float precio;
+        
+        public float precioXDia(){
+            //… Completar
+        }
+    }
+
+    a. la clase no puede representar el caso de cuando el origen y el destino es el mismo
+    b. con la información actual, no es posible determinar cuando termina el viaje
+    c. todas son correctas
+    d. el precio por dia necesita al menos un parámetro para calcularse
+●   e. ninguna es correcta
+
+Marque la mejor opción. “Todos los objetos de una misma clase”
+●   a. comparten los mismos atributos de instancia
+    b. tienen los mismos valores en los atributos
+    c. puede haber solo un objeto por clase
+    d. todas son incorrectas
+    e. a y b son correctas
+
+La palabra reservada “this” no tiene sentido en un método “static”
+●   a. Verdadero
+    b. Falso
+
+LocalTime.now() es un método estatico sin parámetros
+    a. Falso
+●   b. Verdadero
+
+------------------------------------------------------------------------------------------------------
+CLASE 6 - Testing
+------------------------------------------------------------------------------------------------------
+
+Los tests que están escritos en una misma clase se ejecutan en el orden en el que están declarados.
+●   a. Falso
+    b. Verdadero
+
+Inicializar atributos en el método anotado con @BeforeEch de una clase de testeo causa que cada test unitario que utilice estos atributos sea atómico y aislado
+    a. Falso
+●   b. Verdadero
+
+Inicializar atributos en el constructor de una clase de testeo causa que cada test unitario que utilice estos atributos sea atómico y aislado
+    a. Verdadero
+●   b. Falso
+
+Inicializar atributos en el método anotado con @Before de una clase de testeo causa que cada test unitario que utilice estos atributos sea atómico y aislado
+●   a. Falso
+    b. Verdadero
+
+Si suponemos que el atributo “tieneHabitantes” del objeto “hogar” es falso, entonces:
+    a. El test que tiene la sentencia Assertions.assertTrue(!hogar.tieneHabitantes) no pasa satisfactoriamente.
+●   b. El test que tiene la sentencia Assertions.assertTrue(hogar.tieneHabitantes) no pasa satisfactoriamente.
+●   c. El test que tiene la sentencia Assertions.assertEquals(false, hogar.tieneHabitantes) pasa satisfactoriamente
+    d. El test que tiene la sentencia Assertions.assertFalse(hogar.tieneHabitantes) no pasa satisfactoriamente.
+
+------------------------------------------------------------------------------------------------------
+CLASE 7 - Herencia
+------------------------------------------------------------------------------------------------------
+
+Si Perro y Gato heredan de la clase Mamífero y ambas tienen el método público de instancia “amamantar”, entonces:
+    a. Cada objeto tanto de las clases tanto Perro como Gato tendrán comportamiento distinto
+●   b. Los comportamientos para todos los “perros” es igual y todos los “gatos” es igual siempre y cuando “amamantar” (con distinto código) está definido en cada clase.
+    c. Los métodos de instancia no se heredan
+    d. Un objeto tanto de Perro como Gato tienen, si o si, el mismo comportamiento (código, es decir hacen lo mismo)
+
+Para que un objeto sea de 2 clases al mismo tiempo, se debe utilizar un constructor especial
+●   a. Falso
+    b. Verdadero
+
+Si Perro hereda de Mamífero, y perro tiene un atributo String “raza” y Mamífero un String “nombre”, marque la opción correcta.
+    a. Si ambos son públicos, tanto “nombre” como “raza” son accesibles por una instancia de Mamífero
+    b. Aunque ambos sean públicos, “raza” solo puede ser accedido por un objeto de clase Perro y lo mismo para “nombre” y Mamífero.
+    c. Si ambos son públicos, tanto “nombre” como “raza” son accesibles por una instancia tanto de Perro como de Mamífero
+●   d. Si ambos son públicos, tanto “nombre” como “raza” son accesibles por una instancia de Perro
+
+Dado que A <- B <- C, es decir C es una clase que hereda de B y B de A, marque la opción correcta.
+●   a. Los métodos de C no pueden ser usados por B
+    b. Los métodos públicos de A pueden ser usados por un objeto de la clase B pero no por uno de la clase C
+    c. ninguna es correcta
+    d. Los métodos de clase/estáticos de B son heredados por la clase B
+    e. todas son correctas
+
+Una clase puede heredar de varias clases pero implementar una sola interfaz
+●   a. Falso
+    b. Verdadero
+
+------------------------------------------------------------------------------------------------------
+CLASE 8 - Java Collection
+------------------------------------------------------------------------------------------------------
+
+Si se tiene un objeto xx de clase HashMap<String,Producto>
+    a. xx.get(“algo”) si la clave existe debe retornar un objeto tipo producto o null
+    b. La clave es un producto y el valor un texto
+    c. xx.get(“algo”) si la clave existe debe retornar un objeto tipo String
+●   d. xx.put(“algo”,137) no debería compilar	
+
+Si tengo el siguiente código y en la 1er línea se arroja una Exception, la segunda línea nunca se ejecutará.
+    1	habitacion.reservar()
+    2	System.out.println(“La habitación fue reservada correctamente”)
+
+●   a. Verdadero
+    b. Depende del tipo de excepción
+    c. Falso
+
+Si tengo el siguiente código y en la 2da línea se arroja una Exception, el println nunca se ejecutará.
+    1	try {
+    2 		habitacion.reservar()
+    3	} catch (HabitacionYaReservadaException ex)	 {}
+    4	System.out.println(“La habitación fue reservada correctamente”)
+
+    a. Falso
+●   b. Depende del tipo de excepción
+    c. Verdadero
+
+Si tengo el siguiente código y en la 2da línea se arroja una Exception, el println nunca se ejecutará.
+    1	try {
+    2 		habitacion.reservar()
+    3	} catch (Exception ex)	 {}
+    4	System.out.println(“La habitación fue reservada correctamente”)
+
+    a. Verdadero
+    b. Depende del tipo de excepción
+●   C. Falso
+
+Dada la siguiente  clase y el objeto “carrito1”, indique la opción correcta:
+    class CarritoCompra {
+        private List<ItemCarrito> items;
+        public CarritoCompra() {}
+        public void agregarItem(ItemCarrito ic) {
+            this.items.add(ic);
+        }
+    }
+    //--------------
+    CarritoCompra carrito1 =  new CarritoCompra();
+
+    a. carrito1.agregarItem(unItem) agregara un item a la colección items
+    b. El carrito de compra no puede ser instanciado sin parametros
+●   c. carrito1.agregarItem(unItem) arrojará un error
+    d. Para funcionar, en la declaracion, en lugar de usar List<ItemCarrito> se debe usar ArrayList<ItemCarrito>
+
+------------------------------------------------------------------------------------------------------
+CLASE 9 - Configuración de Software
+------------------------------------------------------------------------------------------------------
+
+El archivo principal de configuración de un proyecto gestionado por Maven…
+●   a. Tiene extensión xml
+    b. Tiene extensión yml
+    c. Tiene extensión html
+
+El comando “mvn install” genera un jar
+●   a. Verdadero
+    b. Falso
+
+Maven únicamente permite gestionar las dependencias de un proyecto
+●   a. Falso
+    b. Verdadero
+
+El comando “mvn test” compila el código y luego corre los tests.
+    a. Sí, es cierto
+●   b. Compila únicamente si no estaba compilado previamente
+    c. El comando sirve para otra cosa
+
+Solamente se pueden agregar hasta 10 dependencias para un proyecto
+    a. Verdadero
+●   b. Falso
