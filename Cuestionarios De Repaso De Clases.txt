@@ -359,3 +359,319 @@ El comando “mvn test” compila el código y luego corre los tests.
 Solamente se pueden agregar hasta 10 dependencias para un proyecto
     a. Verdadero
 ●   b. Falso
+
+------------------------------------------------------------------------------------------------------
+CLASE 10 - Examen intermedio - Clases 1 a 10
+------------------------------------------------------------------------------------------------------
+
+Maven únicamente permite gestionar las dependencias de un proyecto
+    a. Verdadero
+●   b. Falso
+
+Una clase puede heredar de varias clases pero implementar una sola interfaz
+    a. Verdadero
+●   b. Falso
+
+Si tenemos el siguiente código, ¿cuál es la salida esperada?
+    char letras[] = {'a','b','c','d'};
+    int numeros[] = new int[]{1,37,16};
+    for(int i=0;i<numeros.length;i++){
+        if (numeros[i] < 30) {
+            System.out.println(letras[i+1]);
+        } else {
+            System.out.println(numeros[i]);
+        }
+    }
+    
+    a. 1, b, 17
+    b. a 37 c
+    c. Para que el código funcione hay que cambiar "i<numeros.length" por "i<letras.length"
+●   d. b 37 d
+    e. 1, c, 17
+
+Marque la mejor opción. “Todos los objetos de una misma clase”
+●   a. comparten los mismos atributos de instancia
+    b. tienen los mismos valores en los atributos
+    c. puede haber solo un objeto por clase
+    d. todas son incorrectas
+    e. a y b son correctas
+
+Los tests que están escritos en una misma clase se ejecutan en el orden en el que están declarados.
+    a. Verdadero
+●   b. Falso
+
+Si tengo el siguiente código y en la 2da línea se arroja una Exception, el println nunca se ejecutará.
+    1	try {
+    2 		habitacion.reservar()
+    3	} catch (HabitacionYaReservadaException ex)	 {}
+    4	System.out.println(“La habitación fue reservada correctamente”)
+
+    a. Falso
+●   b. Depende del tipo de excepción
+    c. Verdadero
+
+El comando “mvn install” genera un jar
+    a. Falso
+●   b. Verdadero
+
+La palabra reservada “this” no tiene sentido en un método “static”
+●   a. Verdadero
+    b. Falso
+
+Indique cuál de los siguientes tipos tiene solo 2 valores:
+    a. binary
+    b. int
+●   c. boolean
+    d. char
+    e. float
+
+Si tenemos el siguiente array:
+   "int numeros[] = new int[]{1,37,16};"
+    ¿qué valor es numeros[2] ?
+
+●   a. 16
+    b. 1, porque vuelve a empezar
+    c. 37
+    d. es un error porque se va de tamaño
+
+Dados 2 objetos a1 y a2, de la misma clase X, si X tiene un método privado y a1 referencia a a2, a1 no puede invocar al método privado de a2.
+    a. Verdadero
+●   b. Falso
+
+Inicializar atributos en el constructor de una clase de testeo causa que cada test unitario que utilice estos atributos sea atómico y aislado
+●   a. Falso
+    b. Verdadero
+
+Dada la siguiente frase, elija la mejor opción:
+    “El proceso de decode es guardar un string como su representación en bytes y el de encode, es recuperar un String a partir de los bytes almacenados.“
+
+●   a. Falso, pero la frase es al revés
+    b. Falso
+    c. Verdadero    
+
+LocalTime.now() es un método estatico sin parámetros
+●   a. Verdadero
+    b. Falso
+
+Dada la siguiente función, indique cuál de las siguientes opciones es la correcta:
+    public static int contarLetra(String unaPalabra, char letra){
+        int cuenta = 0;
+        for (int i = 0; i<letraPalabra.length; i++){
+            if( letraPalabra.charAt(i)  == letra){
+                cuenta = cuenta + 1;
+            }
+        }
+        return cuenta;
+    }
+
+    a. La función puede ser utilizada dentro de un main
+    b. Los parámetros unaPalabra y letra pueden tomar cualquier valor dentro de su tipo
+    c. Si unaPalabra es un String vacío “” la función retorna 0.
+●   d. todas las anteriores
+    e. ninguna de las anteriores
+
+Si usted está en Windows, y ejecuta un programa de Java desde
+    C:\\Users\\SuNombre\\ y quiere abrir el archivo C:\\Users\\SuNombre\\Documentos\\unTexto.txt.
+    Marque la opción correcta:
+
+    a. Para abrir el archivo puede usar en el String la ruta “unText.txt”
+    b. Para abrir el archivo puede usar en el String la ruta “C:\\Users\\SuNombre\\Documentos\\unTexto.txt”
+    c. Para abrir el archivo puede usar en el String la ruta “Documentos\\unText.txt”
+●   d. b y c son correctas
+    e. todas son incorrectas
+
+Si Perro y Gato heredan de la clase Mamífero y ambas tienen el método público de instancia “amamantar”, entonces:
+    a. Un objeto tanto de Perro como Gato tienen, si o si, el mismo comportamiento (código, es decir hacen lo mismo)
+    b. Los métodos de instancia no se heredan
+    c. Cada objeto tanto de las clases tanto Perro como Gato tendrán comportamiento distinto
+●   d. Los comportamientos para todos los “perros” es igual y todos los “gatos” es igual siempre y cuando “amamantar” (con distinto código) está definido en cada clase.
+
+Si suponemos que el atributo “tieneHabitantes” del objeto “hogar” es falso, entonces:
+    a. El test que tiene la sentencia Assertions.assertTrue(!hogar.tieneHabitantes) no pasa satisfactoriamente.
+    b. El test que tiene la sentencia Assertions.assertFalse(hogar.tieneHabitantes) no pasa satisfactoriamente.
+●   c. El test que tiene la sentencia Assertions.assertTrue(hogar.tieneHabitantes) no pasa satisfactoriamente.
+●   d. El test que tiene la sentencia Assertions.assertEquals(false, hogar.tieneHabitantes) pasa satisfactoriamente
+
+Si tengo el siguiente código y en la 1er línea se arroja una Exception, la segunda línea nunca se ejecutará.
+    1	habitacion.reservar()
+    2	System.out.println(“La habitación fue reservada correctamente”)
+
+●   a. Verdadero
+    b. Depende del tipo de excepción
+    c. Falso
+
+El loop while(i > 10) {i = i +1; }, si i=10
+    a. no funciona
+    b. Debuggear consiste en identificar la causa de los errores y corregirlos
+    c. no termina nunca
+●   d. no se ejecuta nunca
+    e. se ejecuta 10 veces y frena
+
+------------------------------------------------------------------------------------------------------
+CLASE 11 - Teórica de sistemas operativos
+------------------------------------------------------------------------------------------------------
+
+¿ Qué pasa si se cargan más objetos en el programa de lo que tiene asignado el proceso de Java?
+    a.  Se llena el stack y se arroja una excepción
+●   b. Se llena el heap y se arroja una excepción
+    c. Pasa el garbage collector y saca objetos al azar hasta que llegue a la cantidad de memoria indicada
+    d. Ninguna de las anteriores
+
+¿ Qué pasa si se realizan más llamadas sin retorno de las que permite un programa de Java?
+    a. Ninguna de las anteriores
+    b. Se retorna null para que el programa pueda seguir ejecutándose normalmente
+    c. Pasa el garbage collector y saca objetos al azar hasta que llegue a la cantidad de memoria indicada
+●   d. Se llena el stack y se arroja una excepción
+    e. Se llena el heap y se arroja una excepción 
+
+Según lo visto en clase, es imposible que un programa tenga más de un proceso en ejecución:
+●   a. Falso
+    b. Verdadero
+
+Marque cuales de las siguientes son recursos de la computadora que usa el SO (sistema operativo)
+●   a. Procesador
+●   b. Red
+●   c. Memoria
+●   d. Sistema de archivos
+
+Cuando tengo un programa en un archivo .class
+●   a. Se puede ejecutar en cualquier SO que tenga instalada la JRE
+    b. Se puede ejecutar en el mismo SO con el cual se compiló el .class
+    c. Se puede ejecutar en cualquier SO solo si tiene instalada la JDK
+    d. Ninguna de las anteriores
+
+------------------------------------------------------------------------------------------------------
+CLASE 12 - Persistencia Relacional
+------------------------------------------------------------------------------------------------------
+
+Cual de las siguientes relaciones no es modelable “directamente” en base de datos relacionales.
+    a. N a 1
+●   b. N a M
+    c. 1 a N
+    d. 1 a 1
+
+Las claves primarias nos permiten mantener la integridad referencial de nuestra base de datos.
+●   a. Falso
+    b. Verdadero
+
+Los comandos DDL nos sirven para:
+    a. Manipular los datos
+    b. Realizar consultas
+●   c. Definir la estructura de los datos
+    d. Realizar transacciones
+
+Los elementos de una DB relacional, se organizan como un conjunto de filas y columnas.
+    a. Falso
+●   b. Verdadero
+
+El comando SELECT no requiere especificar la tabla/s sobre la que se quiere realizar la consulta.
+    a. Verdadero
+●   b. Falso
+
+------------------------------------------------------------------------------------------------------
+CLASE 13 - JDBC
+------------------------------------------------------------------------------------------------------
+
+Una API nos permite, entre otras cosas:
+    a. Definir la estructura de una DB.
+    b. Mejorar la sintaxis del lenguaje de programación.
+●   c. Comunicar dos aplicaciones.
+
+JDBC utiliza el mismo driver para conectarse a los distintos motores de DB.
+    a. Verdadero
+●   b. Falso
+
+El método executeQuery() requiere los parámetros de conexión de la DB:
+    a. Verdadero
+●   b. Falso
+
+El objeto statement es el responsable de:
+    a. Cerrar la conexión.
+●   b. Ejecutar las consultas.
+    c. Abrir la conexión.
+
+Dada la siguiente URL “jdbc:mysql://localhost:3306/dbname”, la parte de “localhost” hace referencia a:
+    a. La API utilizada
+    b. El nombre del driver
+●   c. El nombre del servidor
+    d. El nombre de la base de datos
+
+------------------------------------------------------------------------------------------------------
+CLASE 14 - Expresiones regulares
+------------------------------------------------------------------------------------------------------
+
+Indique cuál de las siguientes opciones NO coincide con la expresión regular 
+    P[A|B]\#[1-9]{2}_..[1-9][0-9]
+
+    a. PA#12_xx10
+    b. PA#12_1211
+●   c. PB#11_xx09
+    d. PB#33_1234
+    e. no coincide ninguna
+    f. coinciden todas
+
+Indique qué grupos se extraen de la expresión regular
+    “P[A|B]\#([1-9|a-z]{3})_.(.[a-z][0-9])” sobre el texto “PA#12a_xxa0”
+
+    a. A 12a xa0
+    b. A 12a xxa0
+●   c. 12a xa0
+    d. 12 xa0
+    e. ninguna de las anteriores
+
+Las expresiones regulares nos ayudan a validar cadenas/strings cuando las clases wrapper no alcanzan
+    a. Falso
+●   b. Verdadero
+
+Escriba una expresión regular que solo valide a los textos “bien” y “mal”. Complete el texto sin comillas ni espacios.
+    Respuesta: "[bien|mal]" <- Sin comillas
+
+Las expresiones regulares son exclusivas de Java
+    a. Verdadero
+●   b. Falso
+
+------------------------------------------------------------------------------------------------------
+CLASE 15 - Tipos de archivos. Serialización y Parseo de datos
+------------------------------------------------------------------------------------------------------
+
+XML y JSON pueden representar prácticamente la misma información, con una estructura muy similar
+●   a. Verdadero
+    b. Falso
+
+Si se tienen las clases Oferta, Producto y Descuento. Dado el siguiente JSON, que representa una oferta, cual es la relación entre clases más probable:
+    {
+        "producto":{
+        "nombre":"Azucar",
+        "peso": [12,"kg"],
+        "precio”: 700
+    },
+        "descuento":{
+        "tipo":"%",
+        "cantidad":0.3,
+        "tope":100
+    },
+        "fechaDesde": "2023-02-23",
+        "fechaHasta": "2023-03-23"
+    }
+
+    a. Producto -> Descuento -> Oferta
+●   b. Producto <- Oferta ->  Descuento
+    c. Oferta -> Producto -> Descuento
+    d. ninguna de las anteriores
+
+Indique cuáles de las siguientes afirmaciones son verdaderas
+●   a. JSON → Objetos	= serialización
+    b. XML -> Objetos 	= serialización
+    c. XML -> JSON             = parseo
+    d. Objetos → JSON	= serialización
+●   e. XML -> Objetos 	= parseo 
+
+Tanto en XML como en JSON, puede haber 2 archivos que representen la misma información, pero los textos sean distintos
+●   a. Verdadero
+    b. Falso
+
+Si hay una relación bidireccional entre 2 clases, que puede pasar cuando se pasan a un formato JSON o XML usando la librería Jackson:
+●   a. Que salte un error causado por un StackOverflowError, el mismo puede ser arreglado usando la anotación @JsonIgnore
+    b. Que salte un error causado por un StackOverflowError, el mismo puede ser arreglado usando la anotación @JsonRecursive
+    c. No salta ningun error, la librería puede manejar esas situaciones sin ayuda
+    d. Ninguna de las anteriores
